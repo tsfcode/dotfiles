@@ -18,6 +18,7 @@ php8.3-curl \
 php8.3-soap \
 php8.3-yaml \
 php8.3-xdebug \
+php8.3-yaml \
 build-essential \
 curl git xclip \
 cargo \

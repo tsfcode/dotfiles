@@ -56,7 +56,10 @@ Plug 'kylechui/nvim-surround'
 " Plug 'rest-nvim/rest.nvim'
 Plug 'rest-nvim/rest.nvim', { 'for': 'http' }
 Plug 'stevearc/oil.nvim'
+Plug 'sainnhe/gruvbox-material'
+Plug 'ellisonleao/gruvbox.nvim'
 " Plug 'machakann/vim-swap' " TODO use treesitter-textobjects instead
+Plug 'github/copilot.vim'
 
 call plug#end()
 let mapleader = ','
@@ -64,11 +67,13 @@ let mapleader = ','
 lua require('config')
 
 "colors
+set background=dark
+let g:gruvbox_material_background = 'soft'
+let g:gruvbox_material_better_performance = 1
 set termguicolors
-colorscheme solarized
+colorscheme gruvbox
 
 syntax enable
-set background=dark
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
@@ -180,11 +185,11 @@ let g:vdebug_features = {
 
 let g:vdebug_options = {
 \       'path_maps': {
-\			'/home/jonaz/git/fortnox': '/home/jonaz/git/fortnox',
-\			'/storage/vol3/fortnox-jf': '/home/jonaz/git/fortnox'
+\			'/home/tommy/code/fortnox': '/home/tommy/code/fortnox',
+\			'/storage/vol3/fortnox-tk': '/home/tommy/code/fortnox'
 \		},
 \       'server': '0.0.0.0',
-\       'ide_key' : 'jf',
+\       'ide_key' : 'tommyk',
 \       'break_on_open' : 0,
 \       'continuous_mode' : 1,
 \}
@@ -350,7 +355,6 @@ augroup end
 " vim-visual-multi
 " messes wih shift-left/right without this
 let g:VM_default_mappings = 0
-
 
 " fix strange error sign with nvim-solarized-lua theme and ALE. This will only
 " show red cross and not red background on it.
