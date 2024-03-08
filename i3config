@@ -50,8 +50,8 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -dmenu -i"
 #
 
 #autostart
-bindsym Control+Mod1+h exec /home/tommy/.cargo/bin/clipcat-menu insert-primary
-exec --no-startup-id xautolock -corners 0-00 -time 3 -locker '~/bin/lockFuzzy' &
+bindsym Control+Mod1+h exec /home/tommy.karlsson@fnox.it/.cargo/bin/clipcat-menu insert-primary
+exec --no-startup-id xautolock -corners 0-00 -time 3 -locker '/home/tommy.karlsson@fnox.it/bin/lockFuzzy' &
 
 
 
@@ -210,8 +210,8 @@ bindsym $mod+r mode "resize"
 #always move gimp to new workspace
 for_window [class="Gimp"] move container to workspace 4, workspace 5, focus
 assign [class="google-chrome-stable"] 1
-assign [class="^URxvt$" instance="^w1$"] 1
-assign [class="^URxvt$" instance="^w2$"] 2
+assign [class="^Alacritty$" instance="^w1$"] 1
+assign [class="^Alacritty$" instance="^w2$"] 2
 
 for_window [class="Pavucontrol"] floating enable, border normal
 
@@ -231,7 +231,8 @@ bindsym Mod1+Shift+p exec gnome-control-center
 
 #desktop background
 # exec --no-startup-id feh --bg-scale /home/tommy/Pictures/WallpaperDog-10816215.jpg
-exec --no-startup-id feh --bg-scale /home/tommy/Pictures/gruvbox-wallpaper.png
+# exec --no-startup-id feh --bg-scale /home/tommy/Pictures/gruvbox-wallpaper.png
+exec --no-startup-id feh --bg-scale /home/tommy.karlsson@fnox.it/Pictures/wallpaper.png
 
 #autostart
 exec i3-sensible-terminal -name w1

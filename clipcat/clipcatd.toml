@@ -1,6 +1,6 @@
 daemonize = true
 max_history = 5000
-history_file_path = '/home/jonaz/.cache/clipcat/clipcatd/history.cch'
+history_file_path = '/home/tommy.karlsson@fnox.it/.cache/clipcat/clipcatd/history.cch'
 log_level = 'warn'
 
 [monitor]
