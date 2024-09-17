@@ -157,10 +157,11 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
 	vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
 	vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
-	vim.keymap.set('i', '<C-A>', 'copilot#Accept("\\<CR>")', {
+	vim.keymap.set('i', '<C-I>', 'copilot#Accept("\\<CR>")', {
 		expr = true,
 		replace_keycodes = false
 	})
+	vim.keymap.set('i', '<C-J>', '<Plug>(copilot-accept-word)')
 	vim.g.copilot_no_tab_map = true
 end
 
@@ -173,7 +174,7 @@ local servers = {
 	clangd = {},
 	rust_analyzer = {},
 	pyright = {},
-	tsserver = {},
+	ts_ls = {},
 	gopls = {
 		settings = {
 			gopls = {
