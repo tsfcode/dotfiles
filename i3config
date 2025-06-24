@@ -237,7 +237,7 @@ exec --no-startup-id feh --bg-scale /home/tommy.karlsson@fnox.it/Pictures/wallpa
 #autostart
 exec i3-sensible-terminal -name w1
 exec i3-sensible-terminal -name w2
-exec google-chrome-stable
+exec firefox
 exec --no-startup-id nm-applet
 
 #dracula
