@@ -62,7 +62,6 @@ Plug 'ellisonleao/gruvbox.nvim'
 " Plug 'machakann/vim-swap' " TODO use treesitter-textobjects instead
 Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'CopilotC-Nvim/CopilotChat.nvim'
 
 " sql editor
 " nvim-dbee dependencies
